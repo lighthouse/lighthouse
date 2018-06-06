@@ -1,0 +1,104 @@
+/*------- alerts-badges -------*/
+
+.alert {
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.alert-dismissible .close {
+    top: -.7rem;
+}
+
+.close {
+    float: right;
+    font-size: 1.4rem;
+    font-weight: $bold;
+    line-height: 1;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+    opacity: .8;
+}
+
+.alert-icon {
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.alert-success {
+    background-color: $success;
+    border-color: $success-hover;
+    color: $white;
+}
+
+.alert-success .close {
+    color: $success-hover;
+}
+
+.alert-info {
+    background-color: $info;
+    border-color: $info-hover;
+    color: $white;
+}
+
+.alert-info .close {
+    color: $info-hover;
+}
+
+.alert-warning {
+    background-color: $warning;
+    border-color: $warning-hover;
+    color: $white;
+}
+
+.alert-warning .close {
+    color: $warning-hover;
+}
+
+.alert-danger {
+    background-color: $danger;
+    border-color: $danger-hover;
+    color: $white;
+}
+
+.alert-danger .close {
+    color: $danger-hover;
+}
+
+.badge {
+    color: $white;
+    font-size: 65%;
+    font-weight: $bold;
+    border-radius: 5px;
+    padding: .5em .8em;
+}
+
+.badge-pill {
+    border-radius: 10rem;
+}
+
+.badge-default {
+    background-color: $text-color;
+}
+
+.badge-primary {
+    background-color: $primary;
+}
+
+.badge-success {
+    background-color: $success;
+}
+
+.badge-info {
+    background-color: $info;
+}
+
+.badge-warning {
+    background-color: $warning;
+}
+
+.badge-danger {
+    background-color: $danger;
+}
+
+/*------- end of alerts-badges -------*/

@@ -1,0 +1,41 @@
+/*------- sliders -------*/
+
+.owl-carousel .block-image {
+    margin: 0 auto 15px auto;
+}
+
+.owl-carousel .block-image-big {
+    margin: 0 auto 15px auto;
+}
+
+#products-slider {
+    background-color: $secondary-hover;
+}
+
+#team-slider {
+    background-color: $secondary-hover;
+}
+
+#testimonials-slider {
+    background: url("../images/placeholder-800.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0;
+}
+
+#testimonials-slider .block {
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+#testimonials-slider.dark .box-description {
+    color: $white;
+    font-size: 1.25rem;
+}
+
+#testimonials-carousel-2 .box-description {
+    font-size: 1rem !important;
+}
+
+/*------- end of sliders -------*/

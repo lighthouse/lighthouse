@@ -1,0 +1,585 @@
+/*------- buttons -------*/
+
+.btn {
+    font-family: $primary-font;
+    font-weight: $regular;
+    font-size: .95rem;
+    line-height: 1.25;
+    letter-spacing: $letter-spacing;
+    border: 2px solid transparent;
+    border-radius: 0.35rem;
+    padding: .75rem 1rem;
+    -moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+
+.btn span {
+    vertical-align: middle;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+    padding: .8rem 1.5rem;
+    font-size: 1.25rem;
+    border-radius: .35rem;
+}
+
+.btn-group-sm>.btn, .btn-sm {
+    padding: .5rem .7rem;
+    font-size: .8rem;
+    border-radius: .35rem;
+}
+
+.btn-group-xs>.btn, .btn-xs {
+    padding: .45rem .5rem;
+    font-size: .6rem;
+    border-radius: .35rem;
+}
+
+.btn-circle {
+    border-radius: 50% !important;
+    height: 40px;
+    width: 40px;
+    padding: 3px !Important;
+}
+
+.btn-square {
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    padding: 3px !Important;
+}
+
+/*--- button colors ---*/
+
+.btn-primary {
+    color: $white;
+    background-color: $primary;
+    border-color: $primary;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle {
+    color: $white;
+    background-color: $primary-hover;
+    border-color: $primary-hover;
+}
+
+.btn-outline-primary {
+    color: $primary;
+    background-image: none;
+    background-color: transparent;
+    border-color: $primary;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary.active, .btn-outline-primary:active, .show>.btn-outline-primary.dropdown-toggle {
+    color: $white;
+    background-color: $primary;
+    border-color: $primary;
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+    color: $white;
+    background-color: $primary;
+    border-color: $primary;
+    opacity: 0.8;
+}
+
+.btn-secondary {
+    color: $title-color;
+    background-color: $secondary;
+    border-color: $secondary;
+}
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary.active, .btn-secondary:active, .show>.btn-secondary.dropdown-toggle {
+    color: $title-color;
+    background-color: $secondary-hover;
+    border-color: $secondary-hover;
+}
+
+.btn-outline-secondary {
+    color: $secondary-hover;
+    background-image: none;
+    background-color: transparent;
+    border-color: $secondary-hover;
+}
+
+.btn-outline-secondary:hover, .btn-outline-secondary:focus, .btn-outline-secondary.active, .btn-outline-secondary:active, .show>.btn-outline-secondary.dropdown-toggle {
+    color: $title-color;
+    background-color: $secondary-hover;
+    border-color: $secondary-hover;
+}
+
+.btn-secondary.disabled, .btn-secondary:disabled {
+    color: $white;
+    background-color: $secondary;
+    border-color: $secondary;
+    opacity: 0.8;
+}
+
+.btn-success {
+    color: $white;
+    background-color: $success;
+    border-color: $success;
+}
+
+.btn-success:hover, .btn-success:focus, .btn-success.active, .btn-success:active, .show>.btn-success.dropdown-toggle {
+    color: $white;
+    background-color: $success-hover;
+    border-color: $success-hover;
+}
+
+.btn-outline-success {
+    color: $success;
+    background-image: none;
+    background-color: transparent;
+    border-color: $success;
+}
+
+.btn-outline-success:hover, .btn-outline-success:focus, .btn-outline-success.active, .btn-outline-success:active, .show>.btn-outline-success.dropdown-toggle {
+    color: $white;
+    background-color: $success;
+    border-color: $success;
+}
+
+.btn-success.disabled, .btn-success:disabled {
+    color: $white;
+    background-color: $success;
+    border-color: $success;
+    opacity: 0.8;
+}
+
+.btn-info {
+    color: $white;
+    background-color: $info;
+    border-color: $info;
+}
+
+.btn-info:hover, .btn-info:focus, .btn-info.active, .btn-info:active, .show>.btn-info.dropdown-toggle {
+    color: $white;
+    background-color: $info-hover;
+    border-color: $info-hover;
+}
+
+.btn-outline-info {
+    color: $info;
+    background-image: none;
+    background-color: transparent;
+    border-color: $info;
+}
+
+.btn-outline-info:hover, .btn-outline-info:focus, .btn-outline-info.active, .btn-outline-info:active, .show>.btn-outline-info.dropdown-toggle {
+    color: $white;
+    background-color: $info;
+    border-color: $info;
+}
+
+.btn-info.disabled, .btn-info:disabled {
+    color: $white;
+    background-color: $info;
+    border-color: $info;
+    opacity: 0.8;
+}
+
+.btn-warning {
+    color: $white;
+    background-color: $warning;
+    border-color: $warning;
+}
+
+.btn-warning:hover, .btn-warning:focus, .btn-warning.active, .btn-warning:active, .show>.btn-warning.dropdown-toggle {
+    color: $white;
+    background-color: $warning-hover;
+    border-color: $warning-hover;
+}
+
+.btn-outline-warning {
+    color: $warning;
+    background-image: none;
+    background-color: transparent;
+    border-color: $warning;
+}
+
+.btn-outline-warning:hover, .btn-outline-warning:focus, .btn-outline-warning.active, .btn-outline-warning:active, .show>.btn-outline-warning.dropdown-toggle {
+    color: $white;
+    background-color: $warning;
+    border-color: $warning;
+}
+
+.btn-warning.disabled, .btn-warning:disabled {
+    color: $white;
+    background-color: $success;
+    border-color: $success;
+    opacity: 0.8;
+}
+
+.btn-danger {
+    color: $white;
+    background-color: $danger;
+    border-color: $danger;
+}
+
+.btn-danger:hover, .btn-danger:focus, .btn-danger.active, .btn-danger:active, .show>.btn-danger.dropdown-toggle {
+    color: $white;
+    background-color: $danger-hover;
+    border-color: $danger-hover;
+}
+
+.btn-outline-danger {
+    color: $danger;
+    background-image: none;
+    background-color: transparent;
+    border-color: $danger;
+}
+
+.btn-outline-danger:hover, .btn-outline-danger:focus, .btn-outline-danger.active, .btn-outline-danger:active, .show>.btn-outline-danger.dropdown-toggle {
+    color: $white;
+    background-color: $danger;
+    border-color: $danger;
+}
+
+.btn-danger.disabled, .btn-danger:disabled {
+    color: $white;
+    background-color: $danger;
+    border-color: $danger;
+    opacity: 0.8;
+}
+
+.btn-white {
+    color: $title-color;
+    background-color: $white;
+    border-color: $white;
+}
+
+.btn-white:hover, .btn-white:focus, .btn-white.active, .btn-white:active, .show>.btn-white.dropdown-toggle {
+    color: $title-color;
+    background-color: $light-grey;
+    border-color: $light-grey;
+}
+
+.btn-outline-white {
+    color: $white;
+    background-image: none;
+    background-color: transparent;
+    border-color: white;
+}
+
+.btn-outline-white:hover, .btn-outline-white:focus, .btn-outline-white.active, .btn-outline-white:active, .show>.btn-outline-white.dropdown-toggle {
+    color: $title-color;
+    background-color: $white;
+    border-color: $white;
+}
+
+.btn-white.disabled, .btn-white:disabled {
+    opacity: 0.8;
+}
+
+.btn-black {
+    color: $white;
+    background-color: $black;
+    border-color: $black;
+}
+
+.btn-black:hover, .btn-black:focus, .btn-black.active, .btn-black:active, .show>.btn-black.dropdown-toggle {
+    color: $white;
+    background-color: $dark-grey;
+    border-color: $dark-grey;
+}
+
+.btn-outline-black {
+    color: $black;
+    background-image: none;
+    background-color: transparent;
+    border-color: $black;
+}
+
+.btn-outline-black:hover, .btn-outline-black:focus, .btn-outline-black.active, .btn-outline-black:active, .show>.btn-outline-black.dropdown-toggle {
+    color: $white;
+    background-color: $black;
+    border-color: $black;
+}
+
+.btn-black.disabled, .btn-black:disabled {
+    opacity: 0.8;
+}
+
+.btn-link {
+    color: $primary;
+}
+
+.btn-link:hover, .btn-link:focus, .btn-link.active, .btn-link:active, .show>.btn-link.dropdown-toggle {
+    color: $primary-hover;
+    text-decoration: none;
+}
+
+.btn-link.disabled, .btn-link:disabled {
+    color: $primary;
+    opacity: 0.8;
+}
+
+.btn:focus {
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+/*--- end of button colors ---*/
+
+
+/*--- social buttons ---*/
+
+.btn-social {
+    font-family: $primary-font;
+    font-weight: $regular;
+    font-size: .95rem;
+    line-height: 1.25;
+    letter-spacing: $letter-spacing;
+    border-radius: 0.35rem;
+    padding: .75rem 1rem;
+    vertical-align: middle;
+    -moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-social i {
+    font-size: .9rem;
+    vertical-align: middle;
+}
+
+.btn-social span {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+/* facebook button */
+
+.btn-facebook, .btn-facebook:active, .btn-facebook:focus {
+    color: $white;
+    background: $facebook;
+    border: 2px solid $facebook;
+}
+
+.btn-facebook:hover {
+    color: $white;
+    background: $facebook-hover;
+    border: 2px solid $facebook-hover;
+}
+
+.btn-facebook-link, .btn-facebook-link:active, .btn-facebook-link:focus {
+    color: $facebook;
+    background: transparent;
+    border: none;
+}
+
+.btn-facebook-link:hover {
+    color: $facebook-hover;
+}
+
+.btn-outline-facebook, .btn-outline-facebook:active, .btn-outline-facebook:focus {
+    color: $facebook;
+    background: transparent;
+    border: 2px solid $facebook;
+}
+
+.btn-outline-facebook:hover {
+    color: $white !important;
+    background: $facebook;
+    border: 2px solid $facebook;
+}
+
+
+/* twitter button */
+
+.btn-twitter, .btn-twitter:active, .btn-twitter:focus {
+    color: $white;
+    background: $twitter;
+    border: 2px solid $twitter;
+}
+
+.btn-twitter:hover {
+    color: $white;
+    background: $twitter-hover;
+    border: 2px solid $twitter-hover;
+}
+
+.btn-twitter:hover {
+    color: $white;
+    background: $twitter-hover;
+    border: 2px solid $twitter-hover;
+}
+
+.btn-twitter-link, .btn-twitter-link:active, .btn-twitter-link:focus {
+    color: $twitter;
+    background: transparent;
+    border: none;
+}
+
+.btn-twitter-link:hover {
+    color: $twitter-hover;
+}
+
+.btn-outline-twitter, .btn-outline-twitter:active, .btn-outline-twitter:focus {
+    color: $twitter;
+    background: transparent;
+    border: 2px solid $twitter;
+}
+
+.btn-outline-twitter:hover {
+    color: $white;
+    background: $twitter;
+    border: 2px solid $twitter;
+}
+
+
+/* google button */
+
+.btn-google, .btn-google:active, .btn-google:focus {
+    color: $white;
+    background: $google;
+    border: 2px solid $google;
+}
+
+.btn-google:hover {
+    color: $white;
+    background: $google-hover;
+    border: 2px solid $google-hover;
+}
+
+.btn-google-link, .btn-google-link:active, .btn-google-link:focus {
+    color: $google;
+    background: transparent;
+    border: none;
+}
+
+.btn-google-link:hover {
+    color: $google-hover;
+}
+
+.btn-outline-google, .btn-outline-google:active, .btn-outline-google:focus {
+    color: $google;
+    background: transparent;
+    border: 2px solid $google;
+}
+
+.btn-outline-google:hover {
+    color: $white;
+    background: $google;
+    border: 2px solid $google;
+}
+
+
+/* linkedin button */
+
+.btn-linkedin, .btn-linkedin:active, .btn-linkedin:focus {
+    color: $white;
+    background: $linkedin;
+    border: 2px solid $linkedin;
+}
+
+.btn-linkedin:hover {
+    color: $white;
+    background: $linkedin-hover;
+    border: 2px solid $linkedin-hover;
+}
+
+.btn-linkedin-link, .btn-linkedin-link:active, .btn-linkedin-link:focus {
+    color: $linkedin;
+    background: transparent;
+    border: none;
+}
+
+.btn-linkedin-link:hover {
+    color: $linkedin-hover;
+}
+
+.btn-outline-linkedin, .btn-outline-linkedin:active, .btn-outline-linkedin:focus {
+    color: $linkedin;
+    background: transparent;
+    border: 2px solid $linkedin;
+}
+
+.btn-outline-linkedin:hover {
+    color: $white;
+    background: $linkedin;
+    border: 2px solid $linkedin;
+}
+
+
+/* pinterest button */
+
+.btn-pinterest, .btn-pinterest:active, .btn-pinterest:focus {
+    color: $white;
+    background: $pinterest;
+    border: 2px solid $pinterest;
+}
+
+.btn-pinterest:hover {
+    color: $white;
+    background: $pinterest-hover;
+    border: 2px solid $pinterest-hover;
+}
+
+.btn-pinterest-link, .btn-pinterest-link:active, .btn-pinterest-link:focus {
+    color: $pinterest;
+    background: transparent;
+    border: none;
+}
+
+.btn-pinterest-link:hover {
+    color: $pinterest-hover;
+}
+
+.btn-outline-pinterest, .btn-outline-pinterest:active, .btn-outline-pinterest:focus {
+    color: $pinterest;
+    background: transparent;
+    border: 2px solid $pinterest;
+}
+
+.btn-outline-pinterest:hover {
+    color: $white;
+    background: $pinterest;
+    border: 2px solid $pinterest;
+}
+
+
+/* dribble button */
+
+.btn-dribbble, .btn-dribbble:active, .btn-dribbble:focus {
+    color: $white;
+    background: $dribbble;
+    border: 2px solid $dribbble;
+}
+
+.btn-dribbble:hover {
+    color: $white;
+    background: $dribbble-hover;
+    border: 2px solid $dribbble-hover;
+}
+
+.btn-dribbble-link, .btn-dribbble-link:active, .btn-dribbble-link:focus {
+    color: $dribbble;
+    background: transparent;
+    border: none;
+}
+
+.btn-dribbble-link:hover {
+    color: $dribbble-hover;
+}
+
+.btn-outline-dribbble, .btn-outline-dribbble:active, .btn-outline-dribbble:focus {
+    color: $dribbble;
+    background: transparent;
+    border: 2px solid $dribbble;
+}
+
+.btn-outline-dribbble:hover {
+    color: $white;
+    background: $dribbble;
+    border: 2px solid $dribbble;
+}
+
+/*--- end of social buttons ---*/
+
+/*------- end of buttons -------*/

@@ -1,0 +1,47 @@
+<div class="text-center lighthouse-header">
+  <span>
+    <img style="width: 256px; height: 256px;" src="assets/images/logo.png">
+  </span>
+  <span class="lighthouse-text">
+    Lighthouse - A Helm Chart Visaulizer
+  </span>
+</div>
+
+<div class="container">
+  <form name="form" (ngSubmit)="f.form.valid && onVisualize()" #f="ngForm" novalidate>
+    <div class="form-group">
+      <input required [(ngModel)]="chartName" type="text" class="form-control" #chartNAME="ngModel" name="chart-input" id="chart-input"
+        aria-describedby="chart-help" placeholder="Helm Chart Name...">
+      <small id="chart-help" class="form-text text-muted">Example: incubator/fluentd</small>
+      <div *ngIf="f.submitted && chartNAME.invalid">
+        <div *ngIf="chartNAME.errors.required">Chart Name Is Required</div>
+      </div>
+    </div>
+    <br>
+    <div class="text-center">
+      <div *ngIf="loading" class="lds-ring">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div *ngIf="error">
+        <h3 class="red">Invalid chart or internal error</h3>
+      </div>
+      <button type="submit" [disabled]="loading" class="btn btn-lg btn-primary">VISUALIZE</button>
+    </div>
+  </form>
+  <br>
+  <br>
+  <div class="row">
+      <div *ngFor="let object of objects" class="col-sm-12 col-md-4">
+          <div class="card text-center">
+              <div class="card-body">
+                  <h4 class="card-title mt-3">{{object.kind}}</h4>
+                  <p class="card-text"></p>
+                  <a (click)="showYAML(object.rawString)" href="javascript:;" class="btn btn-primary">Show YAML</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,137 @@
+/*------- tables -------*/
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid $light-grey;
+}
+
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid $light-grey;
+}
+
+.table-inverse {
+    color: $white;
+    background-color: $dark-grey;
+}
+
+.table-inverse td, .table-inverse th, .table-inverse thead th {
+    border-color: $white;
+}
+
+.thead-default th {
+    color: $title-color;
+    background-color: $light-grey;
+}
+
+.thead-inverse th {
+    color: $white;
+    background-color: $dark-grey;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: $light-grey;
+}
+
+.table-striped.table-inverse tbody tr:nth-of-type(odd) {
+    background-color: $title-color;
+}
+
+.table-bordered td, .table-bordered th {
+    border: 1px solid $light-grey;
+}
+
+.table-hover tbody tr:hover {
+    background-color: $light-grey;
+}
+
+.table-active,.table-active>td,.table-active>th {
+    background-color: $light-grey;
+}
+
+.table-hover .table-active:hover {
+    background-color: $light-grey;
+}
+
+.table-hover .table-active:hover>td,.table-hover .table-active:hover>th {
+    background-color: $light-grey;
+}
+
+.table-hover.table-inverse tbody tr:hover {
+    background-color: $title-color;
+}
+
+.table-inverse .table-active, .table-inverse .table-active>td, .table-inverse .table-active>th {
+    background-color: $title-color;
+}
+
+.table-hover.table-inverse .table-active:hover {
+    background-color: $title-color;
+}
+
+.table-hover.table-inverse .table-active:hover>td, .table-hover.table-inverse .table-active:hover>th {
+    background-color: $title-color;
+}
+
+.table-primary, .table-primary>td, .table-primary>th {
+    background-color: $primary;
+}
+
+.table-hover .table-primary:hover {
+    background-color: $primary-hover;
+}
+
+.table-hover .table-primary:hover>td, .table-hover .table-primary:hover>th {
+    background-color: $primary-hover;
+}
+
+.table-success, .table-success>td, .table-success>th {
+    background-color: $success;
+}
+
+.table-hover .table-success:hover {
+    background-color: $success-hover;
+}
+
+.table-hover .table-success:hover>td, .table-hover .table-success:hover>th {
+    background-color: $success-hover;
+}
+
+.table-info, .table-info>td, .table-info>th {
+    background-color: $info;
+}
+
+.table-hover .table-info:hover {
+    background-color: $info-hover;
+}
+
+.table-hover .table-info:hover>td, .table-hover .table-info:hover>th {
+    background-color: $info-hover;
+}
+
+.table-warning, .table-warning>td, .table-warning>th {
+    background-color: $warning;
+}
+
+.table-hover .table-warning:hover {
+    background-color: $warning-hover;
+}
+
+.table-hover .table-warning:hover>td, .table-hover .table-warning:hover>th {
+    background-color: $warning-hover;
+}
+
+.table-danger, .table-danger>td, .table-danger>th {
+    background-color: $danger;
+}
+
+.table-hover .table-danger:hover {
+    background-color: $danger-hover;
+}
+
+.table-hover .table-danger:hover>td, .table-hover .table-danger:hover>th {
+    background-color: $danger-hover;
+}
+
+/*------- end of tables -------*/

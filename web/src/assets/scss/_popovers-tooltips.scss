@@ -1,0 +1,105 @@
+/*------- popovers & tooltips -------*/
+
+.popover-example {
+    position: relative;
+}
+
+.popover-example .popover {
+    position: relative;
+    display: block;
+    float: left;
+    width: 23%;
+    margin: 1%;
+    z-index: 9;
+}
+
+.popover {
+    max-width: 276px;
+    padding: 0;
+    font-family: $primary-font;
+    font-weight: $regular;
+    font-size: .875rem;
+    background-color: $white;
+    border: 1px solid $secondary-hover;
+    border-radius: 5px;
+}
+
+.popover-header {
+    color: $title-color !important;
+    font-size: 1rem;
+    background-color: $secondary;
+    border-bottom: 1px solid $secondary-hover;
+    padding: .75rem 1rem;
+}
+
+.popover-title {
+    font-size: 1rem;
+    background-color: $secondary;
+    border-bottom: 1px solid $secondary-hover;
+    padding: .75rem 1rem;
+}
+
+.popover-body {
+    padding: .75rem 1rem;
+}
+
+.popover-body p {
+    font-size: .875rem;
+}
+
+.popover.bs-tether-element-attached-top::after, .popover.popover-bottom::after {
+    border-bottom-color: $secondary;
+}
+
+.popover.bs-tether-element-attached-top::before, .popover.popover-bottom::before {
+    border-bottom-color: $secondary-hover;
+}
+
+/*--- tooltips ---*/
+
+.tooltips-example {
+    position: relative;
+}
+
+.tooltips-example .tooltip {
+    position: relative;
+    display: inline-block;
+    margin: 10px 20px;
+    opacity: 1;
+}
+
+.tooltip {
+    font-family: $primary-font;
+    font-weight: $regular;
+    font-size: .875rem;
+}
+
+.tooltip-inner {
+    max-width: 200px;
+    padding: .5rem .75rem;
+    color: $mid-grey;
+    text-align: center;
+    background-color: $white;
+    border: 1px solid $secondary-hover;
+    border-radius: 5px;
+}
+
+.tooltip.bs-tooltip-auto[x-placement^=top] .arrow::before, .tooltip.bs-tooltip-top .arrow::before {
+    border-top-color: $secondary-hover;
+}
+
+.tooltip.bs-tooltip-auto[x-placement^=bottom] .arrow::before, .tooltip.bs-tooltip-bottom .arrow::before {
+    border-bottom-color: $secondary-hover;
+}
+
+.tooltip.bs-tooltip-auto[x-placement^=left] .arrow::before, .tooltip.bs-tooltip-left .arrow::before {
+    border-left-color: $secondary-hover;
+}
+
+.tooltip.bs-tooltip-auto[x-placement^=right] .arrow::before, .tooltip.bs-tooltip-right .arrow::before {
+    border-right-color: $secondary-hover;
+}
+
+/*--- end of tooltips ---*/
+
+/*------- end of popovers & tooltips -------*/

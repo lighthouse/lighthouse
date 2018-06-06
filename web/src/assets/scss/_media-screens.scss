@@ -1,0 +1,231 @@
+/*------- media screens -------*/
+
+/*--- max-widths ---*/
+
+@media only screen and (max-width: 1200px) {
+.navbar-expand-lg .form-inline {
+    display: block;
+    margin: .5rem auto;
+}
+}
+
+@media only screen and (max-width: 1024px) {
+.parallax {
+    background-attachment: scroll !important;
+}
+}
+
+@media only screen and (max-width: 991px) {
+.navbar-collapse {
+    margin-top: .625rem;
+}
+
+.navbar-expand-lg .navbar-brand {
+    margin-left: 0;
+}
+
+.dropdown-item {
+    text-align: center;
+}
+
+.navbar-expand-lg .form-inline {
+    display: block;
+    margin: .5rem auto;
+}
+
+.popover-example .popover {
+    max-width: 100%;
+    width: 44%;
+    margin: 3%;
+}
+
+.footer-left-area {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.footer-right-area {
+    text-align: center;
+}
+
+.cta .col-md-8, .cta .col-md-4 {
+    text-align: center !important;
+    margin: 0 !important;
+}
+
+.cta .col-md-4 .btn {
+    margin: 12px 0 0 0 !important;
+}
+}
+
+@media only screen and (max-width: 767px) {
+.navbar-expand-sm .form-inline {
+    display: block;
+    margin: .5rem auto;
+}
+
+.fact-title {
+    margin-bottom: 30px;
+}
+
+.cta .col-sm-8, .cta .col-sm-4 {
+    text-align: center !important;
+    margin: 0 !important;
+}
+
+.cta .col-sm-4 .btn {
+    margin: 12px 0 0 0 !important;
+}
+}
+
+@media only screen and (max-width: 576px) {
+
+}
+
+@media only screen and (max-width: 575px) {
+.container {
+    width: 100%;
+}
+
+.header-content {
+    padding: 0 15px;
+}
+
+.form-inline .form-control {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.form-inline .btn {
+    display: block;
+    width: 70%;
+    margin: 5px auto;
+}
+
+.popover-example .popover {
+    width: 90%;
+    margin: 5%;
+}
+
+footer {
+    text-align: center;
+}
+}
+
+@media only screen and (max-width: 480px) {
+.custom-form .left-area {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.custom-form .right-area {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+.custom-form .left-area.long {
+    width: 100%;
+}
+
+.custom-form .right-area.long {
+    width: 100%;
+}
+
+.custom-form .left-area.short {
+    width: 100%;
+}
+
+.custom-form .right-area.short {
+    width: 100%;
+}
+
+.modal-footer.custom-form {
+    display: block;
+}
+
+.spinner {
+    left: 45%;
+}
+}
+
+@media only screen and (max-width: 400px) {
+.top-nav {
+    text-align: center;
+}
+
+.top-nav .left {
+    display: block;
+}
+
+.top-nav .right {
+    float: none;
+    display: block;
+}
+
+.pager {
+    text-align: center;
+}
+
+.pager-left, .pager-right {
+    display: block;
+}
+
+.pager-right {
+    float: none;
+}
+
+.spinner {
+    left: 44%;
+}
+}
+
+@media only screen and (max-width: 320px) {
+
+}
+
+/*--- end of max-widths ---*/
+
+
+/*--- min-widths ---*/
+
+@media only screen and (min-width: 1200px) {
+.blog.block .video-player {
+    height: 233px;
+}
+
+.blog.block .video-player.blog-page-sidebar {
+    height: 486px;
+}
+}
+
+@media only screen and (min-width: 992px) {
+.container.container-lg {
+    max-width: 990px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .75rem;
+    padding-left: .75rem;
+}
+
+.dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+}
+
+@media only screen and (min-width: 768px) {
+.sub-col {
+    padding-right: 0;
+}
+}
+
+/*--- end of min-widths ---*/
+
+/*------- end of media screens -------*/

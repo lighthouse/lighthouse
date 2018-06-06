@@ -1,0 +1,687 @@
+/*------- content-blocks -------*/
+
+.cb-buttons .btn {
+    margin: 4px 2px;
+}
+
+.cta {
+    padding: 15px 0;
+}
+
+.block {
+    margin: 15px 0;
+}
+
+.icon-block {
+    border-radius: 5px;
+}
+
+.box-icon {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.icon-bg {
+    display: inline;
+    line-height: 3.5;
+    border-radius: 5px;
+    padding: 25px;
+}
+
+.box-description {
+    margin-bottom: 10px;
+}
+
+.block-image {
+    max-width: 100px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.block-image-md {
+    max-width: 50%;
+    margin-bottom: 15px;
+}
+
+.block-image-full {
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+.social-icons i {
+    font-size: 1rem;
+    margin: 0 3px;
+}
+
+/*--- facts ---*/
+
+.fact-icon {
+    margin-bottom: 15px;
+}
+
+.timer {
+    margin-bottom: 15px;
+}
+
+#facts.has-background {
+    background: $light-grey;
+    padding: 100px 0;
+}
+
+#facts.has-background.dark {
+    background: $dark-grey;
+}
+
+#facts.dark .timer, #facts.dark .fact-title {
+    color: $white;
+}
+
+#facts.has-background-image {
+    background-image: url("../images/placeholder-1200.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+}
+
+/*--- end of facts ---*/
+
+/*--- portfolio ---*/
+
+.project {
+    margin: 15px 0;
+}
+
+.effects {
+    padding-left: 15px;
+}
+
+.effects .img {
+    position: relative;
+    float: left;
+    margin-bottom: 5px;
+    width: 25%;
+    overflow: hidden;
+}
+
+.effects .img:nth-child(n) {
+    margin-right: 5px;
+}
+
+.effects .img:first-child {
+    margin-left: -15px;
+}
+
+.effects .img:last-child {
+    margin-right: 0;
+}
+
+.effects .img img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+.overlay {
+    display: block;
+    position: absolute;
+    z-index: 99;
+    background: $primary-transparent;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin: 0 15px;
+}
+
+a.close-overlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: $regular;
+    color: $white !important;
+    line-height: 45px;
+    text-align: center;
+    background-color: $primary-transparent-2;
+    cursor: pointer;
+}
+
+a.close-overlay.hidden {
+    display: none;
+}
+
+a.expand {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: $white;
+    line-height: 50px;
+    font-weight: $regular;
+    font-size: 3rem;
+}
+
+/* effect 1 */
+
+.effect-1 .overlay {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+}
+
+.effect-1 .overlay a.expand {
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0 auto;
+    opacity: 0;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.effect-1 .img.hover .overlay {
+    opacity: 1;
+}
+
+.effect-1 .img.hover .overlay a.expand {
+    top: 50%;
+    margin-top: -30px;
+    opacity: 1;
+}
+
+/* end of effect 1 */
+
+/* effect 2 */
+
+.effect-2 .overlay {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+}
+
+.effect-2 .overlay a.expand {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.effect-2 .img.hover .overlay {
+    opacity: 1;
+}
+
+.effect-2 .img.hover .overlay a.expand {
+    width: 60px;
+    height: 60px;
+    border: 4px solid $white;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-radius: 30px;
+}
+
+/* end of effect 2 */
+
+/*--- end of portfolio ---*/
+
+/*--- shop ---*/
+
+.product {
+    margin: 15px 0;
+}
+
+.product-details {
+    display: table;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.product .card .product-details {
+    padding: 0;
+}
+
+.product img {
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: ease-in-out 0.3s;
+    -moz-transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.3s;
+}
+
+.product:hover img {
+    opacity: 0.8;
+}
+
+.product:hover .product-title {
+    color: $primary;
+}
+
+.sale-label {
+    display: block;
+    color: $primary;
+    background-color: $secondary;
+    font-size: 12px;
+    font-weight: $bold;
+    line-height: 30px;
+    position: absolute;
+    height: 30px;
+    top: 20px;
+    right: 35px;
+    border: 1px solid $secondary-hover;
+    padding: 0 14px;
+    z-index: 9;
+    -webkit-transition: ease-in-out 0.3s;
+    -moz-transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.3s;
+}
+
+.product .card .sale-label {
+    top: 35px;
+}
+
+.product-link {
+    position: absolute;
+    display: block;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+.product-hover-tools {
+    position: absolute;
+    z-index: 2;
+    bottom: 80px;
+    left: 35px;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s,visibility 0.3s;
+    -o-transition: opacity 0.3s,visibility 0.3s;
+    transition: opacity 0.3s,visibility 0.3s;
+}
+
+.product:hover .product-hover-tools {
+    bottom: 80px;
+    left: 35px;
+    text-align: center;
+    visibility: visible;
+    opacity: 1;
+}
+
+.view-btn {
+    display: inline-block;
+    color: $primary;
+    background-color: $secondary;
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    text-decoration: none;
+    border-radius: 5px;
+    vertical-align: middle;
+    margin: 3px;
+}
+
+.view-btn:hover {
+    color: $primary;
+    background-color: $light-grey;
+}
+
+.add-to-cart {
+    display: inline-block;
+    color: $white;
+    background-color: $primary;
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    text-decoration: none;
+    border-radius: 5px;
+    vertical-align: middle;
+    margin: 3px;
+}
+
+.add-to-cart:hover {
+    color: $white;
+    background-color: $primary-hover;
+}
+
+.product-title {
+    display: inline-block;
+    width: 49%;
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 10px;
+    -webkit-transition: ease-in-out 0.3s;
+    -moz-transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.3s;
+}
+
+.product-price {
+    display: inline-block;
+    width: 49%;
+    text-align: right;
+}
+
+.sale-price {
+    color: $primary;
+    margin-left: 5px;
+}
+
+/*--- end of shop ---*/
+
+/*--- pricing tables ---*/
+
+.pricing-table {
+    background: $secondary;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.pricing-table ul, .pricing-table ol {
+    margin-bottom: 0;
+}
+
+.pricing-title {
+    font-size: 1.25rem;
+    font-weight: $bold;
+    padding: 30px;
+    margin-bottom: 0;
+}
+
+.pricing-table-price {
+    background: $secondary-hover;
+    font-weight: $bold;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.pricing-table-price.w-rounded-price {
+    display: table;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 30px auto;
+    padding: 0;
+}
+
+.rounded-price {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.rounded-price .pricing-price {
+    font-size: 1.75rem;
+}
+
+.rounded-price .pricing-currency {
+    vertical-align: 10px;
+}
+
+.pricing-table-price p {
+    color: $title-color;
+    margin-bottom: 0;
+}
+
+.pricing-currency {
+    font-size: 1rem;
+    font-weight: $bold;
+    vertical-align: 25px;
+}
+
+.pricing-price {
+    font-size: 3rem;
+    font-weight: $bold;
+}
+
+.pricing-period {
+    font-weight: $bold;
+}
+
+.pricing-table-content li {
+    margin-bottom: 15px;
+}
+
+.pricing-table-button {
+    padding: 15px 0 35px;
+}
+
+.featured.pricing-table {
+    background: $primary;
+}
+
+.featured.pricing-table .pricing-title {
+    color: $white;
+}
+
+.featured.pricing-table .pricing-table-content ul li {
+    color: $light-grey;
+}
+
+.featured.pricing-table .pricing-table-price {
+    background: $primary-hover;
+}
+
+.featured.pricing-table .pricing-table-price p {
+    color: $white;
+}
+
+/*--- end of pricing tables ---*/
+
+/*--- blog ---*/
+
+.blog.block .block-image-big {
+    margin-bottom: 0;
+}
+
+.blog.block .owl-carousel {
+    margin-bottom: -1px;
+}
+
+.blog.block .carousel-full-nav .owl-next {
+    top: 46%;
+    font-size: 2rem !important;
+}
+
+.blog.block .carousel-full-nav .owl-prev {
+    top: 46%;
+    font-size: 2rem !important;
+}
+
+.post-meta {
+    border-top: 1px solid $light-grey;
+    border-bottom: 1px solid $light-grey;
+    padding: 10px 0;
+    margin-bottom: 15px;
+}
+
+.post-meta i {
+    color: $secondary-hover;
+    font-size: 0.875rem;
+}
+
+.post-meta p {
+    font-size: 0.75rem;
+    margin-bottom: 0;
+}
+
+.post-meta a {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.post-content {
+    background-color: $secondary;
+    padding: 0 15px 15px 15px;
+}
+
+/*--- end of blog ---*/
+
+/*--- widgets ---*/
+
+.widget-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.widget-title.first {
+    margin-top: 0;
+}
+
+.about-widget {
+    display: inline-block;
+}
+
+.about-image {
+    float: left;
+    margin-right: 15px;
+}
+
+.about-widget img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin: 0 auto 15px auto;
+}
+
+.category-widget {
+    font-size: 0.875rem;
+    border-bottom: 1px solid $light-grey;
+    padding: 0 0 10px 0;
+}
+
+.recent-posts {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.recent-posts.first {
+    margin-top: 0;
+}
+
+.recent-post-image img {
+    max-width: 70px;
+    float: left;
+    margin-right: 15px;
+}
+
+.tag-cloud .btn {
+    margin: 5px 0 5px 5px;
+}
+
+/*--- end of widgets ---*/
+
+/*--- maps ---*/
+
+#map {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 30px;
+}
+
+/*--- end of maps ---*/
+
+/*--- forms ---*/
+
+.custom-form {
+    margin: 15px 0;
+}
+
+.btn-submit-long {
+    width: 100%;
+}
+
+.form-wrapper {
+    background: $white;
+    border: 2px solid $secondary;
+    padding: 30px;
+}
+
+.form-title {
+    font-size: 1.375rem;
+    margin-bottom: 30px;
+}
+
+.form-inline-extras {
+    display: table;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.form-inline-extras .checkbox {
+    margin-left: 2px;
+}
+
+.custom-form .left-area {
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.custom-form .right-area {
+    display: inline-block;
+    width: 50%;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.custom-form .left-area.long {
+    width: 75%;
+}
+
+.custom-form .right-area.long {
+    width: 75%;
+}
+
+.custom-form .left-area.short {
+    width: 25%;
+}
+
+.custom-form .right-area.short {
+    width: 25%;
+}
+
+.form-extras {
+    display: table;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.modal.terms {
+    z-index: 1060;
+}
+
+/*--- forms ---*/
+
+
+
+/*------- end of content-blocks -------*/

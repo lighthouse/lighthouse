@@ -1,0 +1,113 @@
+/*------- cards -------*/
+
+.card {
+    background-color: $white;
+    border: 1px solid $secondary-hover;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+
+.card-rounded {
+    border-radius: 2rem;
+}
+
+.card .md-icon {
+    display: inline;
+}
+
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: $secondary;
+    border-bottom: 1px solid $secondary-hover;
+}
+
+.card-header:first-child {
+    border-radius: calc(.35rem - 1px) calc(.35rem - 1px) 0 0;
+}
+
+.card-footer {
+    padding: .75rem 1.25rem;
+    background-color: $secondary;
+    border-top: 1px solid $secondary-hover;
+}
+
+.card-inverse .card-blockquote, .card-inverse .card-footer, .card-inverse .card-header, .card-inverse .card-title {
+    color: $white;
+}
+
+.card-inverse .card-blockquote .blockquote-footer, .card-inverse .card-link, .card-inverse .card-subtitle, .card-inverse .card-text {
+    color: rgba(255,255,255,.65);
+}
+
+.card-inverse {
+    background-color: $dark-grey;
+    border-color: $dark-grey;
+}
+
+.card-secondary {
+    background-color: $secondary !important;
+    border-color: $secondary-hover !important;
+}
+
+.card-primary {
+    background-color: $primary !important;
+    border-color: $primary-hover !important;
+}
+
+.card-success {
+    background-color: $success;
+    border-color: $success-hover;
+}
+
+.card-info {
+    background-color: $info;
+    border-color: $info-hover;
+}
+
+.card-warning {
+    background-color: $warning;
+    border-color: $warning-hover;
+}
+
+.card-danger {
+    background-color: $danger;
+    border-color: $danger-hover;
+}
+
+.card-outline-inverse {
+    background-color: $white;
+    border-color: $dark-grey;
+}
+
+.card-outline-secondary {
+    background-color: $white;
+    border-color: $secondary-hover !important;
+}
+
+.card-outline-primary {
+    background-color: $white;
+    border-color: $primary-hover;
+}
+
+.card-outline-success {
+    background-color: $white;
+    border-color: $success-hover;
+}
+
+.card-outline-info {
+    background-color: $white;
+    border-color: $info-hover;
+}
+
+.card-outline-warning {
+    background-color: $white;
+    border-color: $warning-hover;
+}
+
+.card-outline-danger {
+    background-color: $white;
+    border-color: $danger-hover;
+}
+
+/*------- end of cards -------*/

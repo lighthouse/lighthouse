@@ -1,0 +1,45 @@
+/*------- footers -------*/
+
+footer {
+    background: $secondary-hover;
+    padding: 1rem;
+}
+
+footer.light {
+    background: $secondary;
+}
+
+footer.dark {
+    background: $dark-grey;
+}
+
+footer.dark p {
+    color: $light-grey;
+}
+
+footer.dark a {
+    color: $white;
+}
+
+footer.dark a:hover {
+    color: $grey;
+}
+
+footer p {
+    color: $title-color;
+    margin-bottom: 0;
+}
+
+.footer-left-area {
+    text-align: left;
+}
+
+.footer-right-area {
+    text-align: right;
+}
+
+.blockquote-footer {
+    background: transparent;
+}
+
+/*------- end of footers -------*/

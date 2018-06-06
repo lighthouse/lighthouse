@@ -1,0 +1,359 @@
+/*------- navigations -------*/
+
+/*--- breadcrumb ---*/
+
+.breadcrumb {
+    padding: 1rem 1.4rem;
+    background-color: $secondary;
+    border-radius: 5px;
+}
+
+.breadcrumb.text-center .breadcrumb-item, .breadcrumb.text-right .breadcrumb-item {
+    float: none;
+}
+
+.breadcrumb-transparent {
+    background-color: transparent;
+    padding: 1rem 0;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    color: $secondary-hover;
+    content: "/";
+}
+
+.breadcrumb-item.active {
+    color: $primary-hover;
+}
+
+/*--- end of breadcrumb ---*/
+
+
+/*--- navs ---*/
+
+.nav-link.disabled {
+    color: $secondary-hover;
+    cursor: not-allowed;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: $primary;
+    background-color: $white;
+    border-color: $secondary-hover $secondary-hover $white;
+}
+
+.nav-tabs .nav-link:hover {
+    border: 1px solid $secondary-hover;
+}
+
+.nav-tabs .nav-link.disabled {
+    color: $secondary-hover;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid $secondary-hover;
+}
+
+.nav-pills .nav-item.show .nav-link, .nav-pills .nav-link.active {
+    color: $white;
+    cursor: default;
+    background-color: $primary;
+}
+
+.nav-pills .nav-link {
+    border-radius: 5px;
+}
+
+/*--- end of navs ---*/
+
+
+/*--- navbars ---*/
+
+.navbar {
+    padding: .625rem 1rem;
+}
+
+.sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.navbar-brand {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+.navbar-brand img {
+    width: auto;
+    max-height: 30px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: $title-color;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .open>.nav-link {
+    color: $primary;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .active>.nav-link:hover, .navbar-light .navbar-nav .nav-link.active:hover, .navbar-light .navbar-nav .nav-link.open:hover, .navbar-light .navbar-nav .open>.nav-link:hover {
+    color: $primary;
+}
+
+.dropdown-menu {
+    margin: 0;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: $primary;
+}
+
+.navbar-toggler {
+    border: none !important;
+    padding: .25rem 0;
+}
+
+.navbar-toggler-right {
+    right: 0;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("../images/menu.png");
+    width: 32px;
+    height: 32px;
+}
+
+.navbar-inverse .navbar-toggler-icon {
+    background-image: url("../images/menu-inverse.png");
+    width: 32px;
+    height: 32px;
+}
+
+.navbar-collapse {
+    text-align: center;
+}
+
+.navbar-light .form-control {
+    border: 2px solid $white;
+}
+
+nav .btn-sm {
+    line-height: 1.5;
+}
+
+nav .btn-xs {
+    line-height: 2.3;
+}
+
+.nav-icon {
+    height: auto;
+}
+
+.nav-icon i {
+    font-size: 18px;
+}
+
+.nav-icon .md-icon {
+    line-height: 40px;
+    width: auto;
+    height: auto;
+}
+
+/* navbar-inverse */
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-toggler {
+    color: $white;
+}
+
+.navbar-inverse .navbar-nav .nav-link {
+    color: $grey;
+}
+
+.navbar-inverse .navbar-nav .active>.nav-link, .navbar-inverse .navbar-nav .nav-link.active, .navbar-inverse .navbar-nav .nav-link.open, .navbar-inverse .navbar-nav .open>.nav-link {
+    color: $white;
+}
+
+.navbar-inverse .navbar-nav .nav-link:hover, .navbar-inverse .navbar-nav .active>.nav-link:hover, .navbar-inverse .navbar-nav .nav-link.active:hover, .navbar-inverse .navbar-nav .nav-link.open:hover, .navbar-inverse .navbar-nav .open>.nav-link:hover {
+    color: $white;
+}
+
+.navbar-inverse .navbar-nav .nav-link:focus, .navbar-inverse .navbar-nav .nav-link:hover {
+    color: $white;
+}
+
+/* end of navbar-inverse */
+
+/*--- end of navbars ---*/
+
+
+/*--- top-navs ---*/
+
+.top-nav {
+    padding: .625rem 1rem;
+}
+
+.top-nav .right {
+    float: right;
+}
+
+.top-nav-light a {
+    color: $title-color;
+}
+
+.top-nav-light a:hover {
+    color: $primary;
+}
+
+.top-nav-light a.btn {
+    color: $white;
+}
+
+.top-nav-light a.btn:hover {
+    color: $white;
+}
+
+.top-nav .btn-xs {
+    line-height: .6rem;
+    vertical-align: middle;
+}
+
+.top-nav-inverse a {
+    color: $grey;
+}
+
+.top-nav-inverse a:hover {
+    color: $white;
+}
+
+/*--- end of top-navs ---*/
+
+
+/*--- paginations ---*/
+
+.page-link {
+    color: $title-color;
+    background-color: $secondary;
+    border: 1px solid $secondary-hover;
+    padding: .625rem 1.1rem;
+}
+
+.page-link:hover {
+    color: $black;
+    background-color: $secondary-hover;
+    border: 1px solid $secondary-hover;
+}
+
+.pagination-white .page-link {
+    color: $title-color;
+    background-color: $white;
+    border: 1px solid $secondary-hover;
+}
+
+.pagination-white .page-link:hover {
+    color: $black;
+    background-color: $secondary;
+    border: 1px solid $secondary-hover;
+}
+
+.pagination-primary .page-link {
+    color: $white;
+    background-color: $primary;
+    border: 1px solid $primary-hover;
+}
+
+.pagination-primary .page-link:hover {
+    color: $white;
+    background-color: $primary-hover;
+    border: 1px solid $primary-hover;
+}
+
+.page-link:active, .page-link:focus, .page-link:visited {
+    color: $black;
+}
+
+.pagination-primary .page-link:active, .pagination-primary .page-link:focus, .pagination-primary .page-link:visited {
+    color: $white;
+}
+
+.page-item.disabled {
+    cursor: not-allowed;
+}
+
+.page-item.disabled .page-link {
+    color: $text-color;
+    pointer-events: none;
+    cursor: not-allowed;
+    background-color: $secondary;
+    border-color: $secondary-hover;
+    opacity: 0.5;
+}
+
+.pagination-primary .page-item.disabled .page-link {
+    color: $light-grey;
+    pointer-events: none;
+    cursor: not-allowed;
+    background-color: $primary;
+    border-color: $primary-hover;
+}
+
+.page-item.active .page-link {
+    color: $white;
+    background-color: $primary;
+    border-color: $primary;
+}
+
+.pagination-primary .page-item.active .page-link {
+    color: $white;
+    background-color: $primary-hover;
+    border-color: $primary-hover;
+}
+
+.page-item.active .page-link:hover {
+    color: $white;
+    background-color: $primary-hover;
+    border-color: $primary-hover;
+}
+
+.pager {
+    padding-left: 0;
+}
+
+.pager span, .pager i {
+    vertical-align: middle;
+}
+
+.pager-left, .pager-right {
+    display: inline-block;
+}
+
+.pager-left i {
+    margin-right: 1px;
+}
+
+.pager-right i {
+    margin-left: 1px;
+}
+
+.pager-right {
+    float: right;
+}
+
+/*--- end of paginations ---*/
+
+
+/*------- end of navigations -------*/

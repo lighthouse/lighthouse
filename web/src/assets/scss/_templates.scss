@@ -1,0 +1,344 @@
+/*------- templates -------*/
+
+.page section {
+    margin: 30px 0;
+}
+
+.header-logo {
+    max-width: 120px;
+    margin-bottom: 30px;
+}
+
+.header-title {
+    margin-bottom: 30px;
+}
+
+.header-description {
+    margin-bottom: 0;
+}
+
+.header-scroll-down {
+    position: realative;
+}
+
+.header-scroll-down a {
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    right: auto;
+    color: $white;
+    margin-left: -15px;
+}
+
+.header-scroll-down a:hover {
+    color: $primary;
+}
+
+.custom-form.width-50 {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.custom-form.width-75 {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.scroll-to-top {
+    background: $primary;
+    color: $white;
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 20px;
+    line-height: 38px;
+    border: 1px solid rgba(0,0,0,0.1);
+    position: fixed;
+    text-align: center;
+    font-size: 18px;
+    z-index: 99;
+
+&.is-hidden {
+    opacity: 0;
+    -webkit-transform: translate(0,-5px);
+    -webkit-transition: -webkit-transform .2s,background .2s,color .2s,opacity 0 .2s;
+}
+
+&.is-visible {
+    opacity: 1;
+    -webkit-transform: translate(0,0);
+    -webkit-transition: -webkit-transform .2s,background .2s,color .2s;
+}
+}
+
+.scroll-to-top:hover, .scroll-to-top:active, .scroll-to-top:focus {
+    color: $white;
+    opacity: 0.95;
+}
+
+/*--- basic template ---*/
+
+header.basic-template {
+    background: url("../images/placeholder-800.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header.basic-template .container {
+    position: relative;
+    padding: 200px 0;
+}
+
+/*--- end of basic template ---*/
+
+/*--- business template ---*/
+
+header.business-template {
+    background: url("../images/placeholder-800.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header.business-template .container {
+    position: relative;
+    padding: 100px 0;
+}
+
+header.business-template .header-content {
+    margin: 0;
+}
+
+/*--- end of business template ---*/
+
+/*--- portfolio template ---*/
+
+header.portfolio-template {
+    background: url("../images/placeholder-800.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header.portfolio-template .container {
+    position: relative;
+    padding: 150px 0;
+}
+
+#services.has-background {
+    background: url("../images/placeholder-800.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+}
+
+/*--- end of portfolio template ---*/
+
+/*--- blog template ---*/
+
+.featured-posts {
+    background: url("../images/placeholder-800.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*--- end of blog template ---*/
+
+/*--- landing page template ---*/
+
+header.landing-page-template {
+    background: url("../images/placeholder-800.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header.landing-page-template .container {
+    position: relative;
+    padding: 150px 0;
+}
+
+#how-it-works {
+    background: $secondary;
+    padding: 50px 0;
+}
+
+/*--- end of landing page template ---*/
+
+/*--- shop template ---*/
+
+header.shop-template {
+    background: url("../images/placeholder-800.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header.shop-template .container {
+    position: relative;
+    padding: 100px 0;
+}
+
+header.shop-template .header-content {
+    margin: 0;
+}
+
+/*--- end of shop template ---*/
+
+/*--- 404 template ---*/
+
+body.page-not-found {
+    background: url("../images/placeholder-800.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.error-wrapper {
+    width: 80%;
+    max-width: 600px;
+    background: rgba(55,55,55,0.75);
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.error-logo {
+    max-width: 100px;
+}
+
+.error-title {
+    font-size: 5rem;
+}
+
+.error-search {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/*--- end of 404 template ---*/
+
+/*--- preloader ---*/
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $body-bg;
+    z-index: 999999;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    box-sizing: border-box;
+    position: absolute;
+    top: 45%;
+    left: 48%;
+}
+
+.spinner-round:before {
+    border-radius: 50%;
+    content: " ";
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    box-sizing: border-box;
+    border-top: solid 4px $secondary;
+    border-right: solid 4px $secondary;
+    border-bottom: solid 4px $secondary;
+    border-left: solid 4px $secondary;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.spinner-round:after {
+    border-radius: 50%;
+    content: " ";
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    box-sizing: border-box;
+    border-top: solid 4px $primary;
+    border-right: solid 4px transparent;
+    border-bottom: solid 4px transparent;
+    border-left: solid 4px transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: spinner-round-animate 1s ease-in-out infinite;
+}
+
+@keyframes spinner-round-animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*--- end of preloader ---*/
+
+/*--- index / demo page ---*/
+
+body.demo {
+    background: $light-grey;
+}
+
+header.demo-page {
+    background: url("../images/demo-bg.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header.demo-page .container {
+    position: relative;
+    padding: 150px 0;
+}
+
+.demo-item {
+    background: $white;
+    border: 1px solid $secondary-hover;
+    -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition: ease-in-out 0.3s;
+    -moz-transition: ease-in-out 0.3s;
+    -o-transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.3s;
+    padding: 1rem;
+}
+
+.demo-item h5 {
+    font-size: 1rem;
+}
+
+.portfolio-filter.list-inline li {
+    padding: 0;
+    display: inline-block;
+}
+
+.portfolio-filter a {
+    color: $text-color;
+    font-size: .875rem;
+    font-weight: $bold;
+    letter-spacing: $letter-spacing-2x;
+    border: 2px solid transparent;
+    margin: 0 5px;
+    padding: 10px 8px;
+}
+
+.portfolio-filter a.active {
+    color: $primary;
+    background-color: transparent;
+    border: 2px solid transparent;
+}
+
+.portfolio-filter a:hover {
+    color: $primary;
+    background-color: transparent;
+    border: 2px solid transparent;
+}
+
+/*--- end of index / demo page ---*/
+
+/*------- templates -------*/

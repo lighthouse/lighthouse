@@ -1,0 +1,106 @@
+/*------- modals -------*/
+
+.example-modal .modal {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    z-index: 1;
+    display: block;
+}
+
+.modal-content {
+    background-color: $white;
+    border: 1px solid $secondary-hover;
+    border-radius: 5px;
+}
+
+.modal-header {
+    border-bottom: 1px solid $secondary-hover;
+}
+
+ .modal-body p {
+    margin-bottom: 0;
+}
+
+.modal-body.multi-paragraph p {
+    margin-bottom: 10px;
+}
+
+.modal-footer {
+    border-top: 1px solid $secondary-hover;
+}
+
+[role=button], a, area, button, input, label, select, summary, textarea {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+
+.inverse.modal-content .modal-title {
+    color: $white;
+}
+
+.inverse.modal-content .modal-body * {
+    color: $light-grey;
+}
+
+.inverse button.close {
+    color: $white;
+}
+
+.modal-inverse.modal-content {
+    background-color: $black;
+    border: 1px solid $dark-grey;
+}
+
+.modal-inverse .modal-header, .modal-inverse .modal-footer {
+    border-color: $dark-grey;
+}
+
+.modal-primary.modal-content {
+    background-color: $primary;
+    border: 1px solid $primary-hover;
+}
+
+.modal-primary .modal-header, .modal-primary .modal-footer {
+    border-color: $primary-hover;
+}
+
+.modal-success.modal-content {
+    background-color: $success;
+    border: 1px solid $success-hover;
+}
+
+.modal-success .modal-header, .modal-success .modal-footer {
+    border-color: $success-hover;
+}
+
+.modal-info.modal-content {
+    background-color: $info;
+    border: 1px solid $info-hover;
+}
+
+.modal-info .modal-header, .modal-info .modal-footer {
+    border-color: $info-hover;
+}
+
+.modal-warning.modal-content {
+    background-color: $warning;
+    border: 1px solid $warning-hover;
+}
+
+.modal-warning .modal-header, .modal-warning .modal-footer {
+    border-color: $warning-hover;
+}
+
+.modal-danger.modal-content {
+    background-color: $danger;
+    border: 1px solid $danger-hover;
+}
+
+.modal-danger .modal-header, .modal-danger .modal-footer {
+    border-color: $danger-hover;
+}
+
+/*------- end of modals -------*/

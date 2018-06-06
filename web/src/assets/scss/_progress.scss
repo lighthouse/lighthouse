@@ -1,0 +1,20 @@
+/*------- progress -------*/
+
+.progress {
+    margin-bottom: 20px;
+}
+
+.progress {
+    font-size: .75rem;
+    line-height: 1rem;
+    background-color: $secondary;
+    border-radius: 4px;
+}
+
+.progress-bar {
+    height: 1rem;
+    color: $white;
+    background-color: $primary;
+}
+
+/*------- end of progress -------*/
